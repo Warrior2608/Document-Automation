@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg-info/
+.venv/
+venv/
+ENV/
+
+# Build / packaging
+build/
+dist/
+*.spec
+*.exe
+*.dll
+*.so
+
+# Logs
+logs/
+*.log
+
+# Local config / editor files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Project-specific local files
+backup/
+config.json
+*.sqlite
+*.db

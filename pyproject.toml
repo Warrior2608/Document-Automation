@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "document-automation-studio"
+version = "0.1.0"
+description = "Document Automation Studio"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "PySide6>=6.8.0",
+  "python-docx>=1.1.2",
+  "openpyxl>=3.1.5",
+  "Pillow>=10.4.0",
+  "pandas>=2.2.3",
+  "lxml>=5.3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3.0",
+  "pyinstaller>=6.0.0",
+]
+
+[project.scripts]
+document-automation-studio = "document_automation_studio.app:launch_app"
+
+[tool.setuptools.packages.find]
+include = ["document_automation_studio"]
+exclude = ["logs"]
